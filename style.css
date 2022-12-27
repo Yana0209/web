@@ -1,0 +1,68 @@
+@media (max-height:1200px){
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+ nav { grid-area: 1 / 4 / 3 /5; }
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+footer { grid-area: 4 / 1 / 5 / 5; }
+main>nav {background: #eee;}
+main>div {background: #eee;height: 150px;}
+h1 {
+text-align: center;
+}
+
+div { padding: 10px;
+      border-radius: 10px;
+    }
+img {
+    float:left;
+    margin: 10px;
+    
+}
+nav {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.contacts {
+    text-align: left;
+}
+#cake:checked ~ div.cheescake div.biscuit {
+display: none;
+}
+}
+@media (max-height:375px){
+main{
+  display: flex;
+  flex-flow: column;
+}
+}
+@media (max-height:730px){
+  main{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  }
+  nav { grid-area: 1 / 1 / 2 /4; }
+  .div1 { grid-area: 2 / 1 / 3 / 2; }
+  .div2 { grid-area: 2 / 2 / 3 / 3; }
+  .div3 { grid-area: 2 / 3 / 3 / 4; }
+  .div4 { grid-area: 3 / 1 / 4 / 2; }
+  .div5 { grid-area: 3 / 2 / 4 / 3; }
+  .div6 { grid-area: 3 / 3 / 4 / 4; }
+  .div7 { grid-area: 4 / 1 / 5 / 2; }
+  .div8 { grid-area: 4 / 2 / 5 / 3; }
+  .div9 { grid-area: 4 / 3 / 5 / 4; }
+  footer { grid-area: 5 / 1 / 6 / 4; }
+}
